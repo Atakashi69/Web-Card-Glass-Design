@@ -1,4 +1,4 @@
-# WebCardGlassDesign
+# Web Card Glass Design
 Business web card with modern glass design preview:
 ![Preview1](https://i.imgur.com/vNIdPFs.png)
 Preview when hovering one of the links
