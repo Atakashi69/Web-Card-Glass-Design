@@ -147,6 +147,7 @@ main {
 .games {
     flex: 2;
     margin: 5rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
