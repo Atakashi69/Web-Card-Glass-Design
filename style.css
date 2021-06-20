@@ -10,8 +10,8 @@
         rgb(171, 136, 240),
         rgb(113, 124, 217)
     );
-    --text-color: rgb(46, 73, 128);
-    --text-color-highlight: rgb(96, 123, 178);
+    --text-color: rgb(54, 50, 85);
+    --text-color-hover: rgb(24, 20, 55);
 }
 
 h1 {
@@ -143,7 +143,7 @@ main {
     filter: grayscale(0);
 }
 .link:hover h2 {
-    color: var(--text-color-highlight);
+    color: var(--text-color-hover);
 }
 
 .link h2 {
