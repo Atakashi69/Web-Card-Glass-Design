@@ -5,10 +5,20 @@
 }
 
 :root {
-    --main-gradient: linear-gradient(
+    --background-gradient: linear-gradient(
         to right top,
         rgb(171, 136, 240),
         rgb(113, 124, 217)
+    );
+    --white-gradient: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    --white-gradient-reverse: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.7)
     );
     --text-color: rgb(54, 50, 85);
     --text-color-hover: rgb(24, 20, 55);
@@ -37,7 +47,7 @@ h3 {
 main {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
-    background: var(--main-gradient);
+    background: var(--background-gradient);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,11 +57,7 @@ main {
     background: white;
     min-height: 80vh;
     width: 80%;
-    background: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0.3)
-    );
+    background: var(--white-gradient);
     border-radius: 2rem;
     z-index: 2;
     backdrop-filter: blur(1rem);
@@ -61,11 +67,7 @@ main {
 .circle1,
 .circle2 {
     background: white;
-    background: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 0.8),
-        rgba(255, 255, 255, 0.3)
-    );
+    background: var(--white-gradient);
     position: absolute;
     border-radius: 50%;
 }
@@ -90,11 +92,7 @@ main {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    background: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0.3)
-    );
+    background: var(--white-gradient);
     border-radius: 2rem 0 0 2rem;
 }
 
@@ -132,12 +130,8 @@ main {
 }
 
 .link:hover {
-    background: linear-gradient(
-        to left top,
-        rgba(255, 255, 255, 0.9),
-        rgba(255, 255, 255, 0.5)
-    );
-    box-shadow: 3px 3px 10px rgba(122, 122, 122, 0.2);
+    background: var(--white-gradient-reverse);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 .link:hover img {
     filter: grayscale(0);
@@ -160,15 +154,11 @@ main {
 
 .card {
     display: flex;
-    background: linear-gradient(
-        to left top,
-        rgba(255, 255, 255, 0.9),
-        rgba(255, 255, 255, 0.5)
-    );
+    background: var(--white-gradient-reverse);
     border-radius: 1rem;
     margin: 2rem 0;
     padding: 1rem;
-    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
